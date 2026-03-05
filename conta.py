@@ -16,3 +16,9 @@ class ContaBancaria:
 
     def obter_saldo(self):
         return self.saldo
+    
+    def transferir(self, valor, conta_destino):
+        if self.sacar(valor):
+            conta_destino.depositar(valor)
+            return True
+        return False
