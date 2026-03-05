@@ -9,7 +9,7 @@ class ContaBancaria:
         return self.saldo
 
     def sacar(self, valor):
-        if valor > 0:
+        if valor > 0 and self.saldo >= valor:
             self.saldo -= valor
             return True
         return False
