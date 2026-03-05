@@ -47,6 +47,7 @@ git checkout -b feature/saque-sem-limite
 ```
 
 **Passo 3:** Registrar a alteração e enviar para o repositório remoto.
+**Altere o número da issue**.
 
 ```bash
 git add conta.py
